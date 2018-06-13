@@ -6,9 +6,8 @@
     <field name="name"/>
     <label name="active"/>
     <field name="active"/>
-    <label name="url"/>
-    <field name="url"/>
-    <label name="slug"/>
-    <field name="slug"/>
+    <label name="description"/>
+    <newline/>
+    <field name="description" colspan="4"/>
     <field name="products" colspan="4" widget="many2many"/>
 </form>
