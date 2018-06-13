@@ -1,6 +1,10 @@
-# 
+#
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:product.brand,active:"
+msgid "Active"
+msgstr "Actiu"
 
 msgctxt "field:product.brand,create_date:"
 msgid "Create Date"
@@ -10,6 +14,10 @@ msgctxt "field:product.brand,create_uid:"
 msgid "Create User"
 msgstr "Usuari creació"
 
+msgctxt "field:product.brand,description:"
+msgid "Description"
+msgstr "Descripció"
+
 msgctxt "field:product.brand,id:"
 msgid "ID"
 msgstr "ID"
@@ -18,9 +26,13 @@ msgctxt "field:product.brand,name:"
 msgid "Name"
 msgstr "Nom"
 
+msgctxt "field:product.brand,products:"
+msgid "Products"
+msgstr "Productes"
+
 msgctxt "field:product.brand,rec_name:"
-msgid "Name"
-msgstr "Nom"
+msgid "Record Name"
+msgstr "Nom del registre"
 
 msgctxt "field:product.brand,write_date:"
 msgid "Write Date"
