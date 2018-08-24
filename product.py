@@ -21,8 +21,7 @@ class Brand(ModelSQL, ModelView):
         return True
 
 
-class Template:
+class Template(metaclass=PoolMeta):
     __name__ = 'product.template'
-    __metaclass__ = PoolMeta
     brand = fields.Many2One('product.brand', 'Brand', states=STATES,
         depends=DEPENDS)
