@@ -5,7 +5,7 @@ from trytond.pool import PoolMeta
 
 from trytond.modules.product.product import STATES, DEPENDS
 
-__all__ = ['Brand', 'Template']
+__all__ = ['Brand', 'Model', 'Template']
 
 
 class Brand(ModelSQL, ModelView):
@@ -19,6 +19,13 @@ class Brand(ModelSQL, ModelView):
     @staticmethod
     def default_active():
         return True
+
+
+class Model(ModelSQL, ModelView):
+    '''Model'''
+    __name__ = 'product.brand.model'
+    name = fields.Char('Name', required=True)
+    brand = fields.Many2One('product.brand', 'Brand', required=True)
 
 
 class Template(metaclass=PoolMeta):

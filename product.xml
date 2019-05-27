@@ -56,5 +56,52 @@
 
         <menuitem action="act_product_brand" id="menu_product_brand"
             parent="product.menu_configuration" sequence="50"/>
+
+        <!-- product.brand.model -->
+        <record model="ir.ui.view" id="product_brand_model_view_form">
+            <field name="model">product.brand.model</field>
+            <field name="type">form</field>
+            <field name="name">product_brand_model_form</field>
+        </record>
+
+        <record model="ir.ui.view" id="product_brand_model_view_list">
+            <field name="model">product.brand.model</field>
+            <field name="type">tree</field>
+            <field name="name">product_brand_model_list</field>
+        </record>
+
+        <record model="ir.action.act_window" id="act_product_brand_model">
+            <field name="name">Brand Models</field>
+            <field name="res_model">product.brand.model</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_product_brand_model_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="product_brand_model_view_list"/>
+            <field name="act_window" ref="act_product_brand_model"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_product_brand_model_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="product_brand_model_view_form"/>
+            <field name="act_window" ref="act_product_brand_model"/>
+        </record>
+
+        <record model="ir.model.access" id="access_product_brand_model">
+            <field name="model" search="[('model', '=', 'product.brand.model')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+        <record model="ir.model.access" id="access_product_brand_model_admin">
+            <field name="model" search="[('model', '=', 'product.brand.model')]"/>
+            <field name="group" ref="product.group_product_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <menuitem action="act_product_brand_model" id="menu_product_brand_model"
+            parent="menu_product_brand" sequence="50" name="Models" />
     </data>
 </tryton>

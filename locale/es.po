@@ -42,6 +42,38 @@ msgctxt "field:product.brand,write_uid:"
 msgid "Write User"
 msgstr "Usuario modificación"
 
+msgctxt "field:product.brand.model,brand:"
+msgid "Brand"
+msgstr "Marca"
+
+msgctxt "field:product.brand.model,create_date:"
+msgid "Create Date"
+msgstr "Fecha de creación"
+
+msgctxt "field:product.brand.model,create_uid:"
+msgid "Create User"
+msgstr "Usuario de creación"
+
+msgctxt "field:product.brand.model,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:product.brand.model,name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:product.brand.model,rec_name:"
+msgid "Record Name"
+msgstr "Nombre registro"
+
+msgctxt "field:product.brand.model,write_date:"
+msgid "Write Date"
+msgstr "Usuario de creación"
+
+msgctxt "field:product.brand.model,write_uid:"
+msgid "Write User"
+msgstr "Usuario de modificación"
+
 msgctxt "field:product.template,brand:"
 msgid "Brand"
 msgstr "Marca"
@@ -50,13 +82,25 @@ msgctxt "model:ir.action,name:act_product_brand"
 msgid "Brands"
 msgstr "Marcas"
 
+msgctxt "model:ir.action,name:act_product_brand_model"
+msgid "Brand Models"
+msgstr "Modelos de marca"
+
 msgctxt "model:ir.ui.menu,name:menu_product_brand"
 msgid "Brands"
 msgstr "Marcas"
 
+msgctxt "model:ir.ui.menu,name:menu_product_brand_model"
+msgid "Models"
+msgstr "Modelos"
+
 msgctxt "model:product.brand,name:"
 msgid "Brand"
 msgstr "Marca"
+
+msgctxt "model:product.brand.model,name:"
+msgid "Model"
+msgstr "Modelo"
 
 msgctxt "view:product.brand:"
 msgid "Brand"
