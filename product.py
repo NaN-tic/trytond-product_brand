@@ -3,8 +3,6 @@
 from trytond.model import ModelView, ModelSQL, fields
 from trytond.pool import PoolMeta
 
-from trytond.modules.product.product import STATES, DEPENDS
-
 __all__ = ['Brand', 'Model', 'Template']
 
 
@@ -30,5 +28,4 @@ class Model(ModelSQL, ModelView):
 
 class Template(metaclass=PoolMeta):
     __name__ = 'product.template'
-    brand = fields.Many2One('product.brand', 'Brand', states=STATES,
-        depends=DEPENDS)
+    brand = fields.Many2One('product.brand', 'Brand')
