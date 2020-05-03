@@ -3,8 +3,6 @@
 from trytond.model import ModelView, ModelSQL, fields
 from trytond.pool import PoolMeta
 
-from trytond.modules.product.product import STATES, DEPENDS
-
 
 class Brand(ModelSQL, ModelView):
     'Brand'
