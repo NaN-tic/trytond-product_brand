@@ -5,11 +5,9 @@ from trytond.pool import PoolMeta
 
 from trytond.modules.product.product import STATES, DEPENDS
 
-__all__ = ['Brand', 'Model', 'Template']
-
 
 class Brand(ModelSQL, ModelView):
-    '''Brand'''
+    'Brand'
     __name__ = 'product.brand'
     name = fields.Char('Name', required=True, translate=True)
     active = fields.Boolean('Active')
@@ -20,9 +18,18 @@ class Brand(ModelSQL, ModelView):
     def default_active():
         return True
 
+    @classmethod
+    def copy(cls, brands, default=None):
+        if default is None:
+            default = {}
+        else:
+            default = default.copy()
+        default.setdefault('products', None)
+        return super().copy(brands, default)
+
 
 class Model(ModelSQL, ModelView):
-    '''Model'''
+    'Model'
     __name__ = 'product.brand.model'
     name = fields.Char('Name', required=True)
     brand = fields.Many2One('product.brand', 'Brand', required=True)
@@ -30,5 +37,4 @@ class Model(ModelSQL, ModelView):
 
 class Template(metaclass=PoolMeta):
     __name__ = 'product.template'
-    brand = fields.Many2One('product.brand', 'Brand', states=STATES,
-        depends=DEPENDS)
+    brand = fields.Many2One('product.brand', 'Brand')
