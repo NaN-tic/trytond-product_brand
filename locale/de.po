@@ -1,0 +1,103 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:product.brand,active:"
+msgid "Active"
+msgstr "Aktiv"
+
+msgctxt "field:product.brand,create_date:"
+msgid "Create Date"
+msgstr "Erstellungsdatum"
+
+msgctxt "field:product.brand,create_uid:"
+msgid "Create User"
+msgstr "Erstellt durch"
+
+msgctxt "field:product.brand,description:"
+msgid "Description"
+msgstr "Bezeichnung"
+
+msgctxt "field:product.brand,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:product.brand,name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:product.brand,products:"
+msgid "Products"
+msgstr "Varianten"
+
+msgctxt "field:product.brand,rec_name:"
+msgid "Record Name"
+msgstr "Name"
+
+msgctxt "field:product.brand,write_date:"
+msgid "Write Date"
+msgstr "Zuletzt geändert"
+
+msgctxt "field:product.brand,write_uid:"
+msgid "Write User"
+msgstr "Letzte Änderung durch"
+
+msgctxt "field:product.brand.model,brand:"
+msgid "Brand"
+msgstr "Marke"
+
+msgctxt "field:product.brand.model,create_date:"
+msgid "Create Date"
+msgstr "Erstellungsdatum"
+
+msgctxt "field:product.brand.model,create_uid:"
+msgid "Create User"
+msgstr "Erstellt durch"
+
+msgctxt "field:product.brand.model,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:product.brand.model,name:"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "field:product.brand.model,rec_name:"
+msgid "Record Name"
+msgstr "Name"
+
+msgctxt "field:product.brand.model,write_date:"
+msgid "Write Date"
+msgstr "Zuletzt geändert"
+
+msgctxt "field:product.brand.model,write_uid:"
+msgid "Write User"
+msgstr "Letzte Änderung durch"
+
+msgctxt "field:product.template,brand:"
+msgid "Brand"
+msgstr "Marke"
+
+msgctxt "model:ir.action,name:act_product_brand"
+msgid "Brands"
+msgstr "Marken"
+
+msgctxt "model:ir.action,name:act_product_brand_model"
+msgid "Brand Models"
+msgstr "Markenmodelle"
+
+msgctxt "model:ir.ui.menu,name:menu_product_brand"
+msgid "Brands"
+msgstr "Marken"
+
+msgctxt "model:ir.ui.menu,name:menu_product_brand_model"
+msgid "Models"
+msgstr "Modelle"
+
+msgctxt "model:product.brand,name:"
+msgid "Brand"
+msgstr "Marke"
+
+msgctxt "model:product.brand.model,name:"
+msgid "Model"
+msgstr "Modell"
