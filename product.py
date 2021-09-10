@@ -1,20 +1,15 @@
 # The COPYRIGHT file at the top level of this repository contains the full
 # copyright notices and license terms.
-from trytond.model import ModelView, ModelSQL, fields
+from trytond.model import ModelView, ModelSQL, DeactivableMixin, fields
 from trytond.pool import PoolMeta
 
 
-class Brand(ModelSQL, ModelView):
+class Brand(DeactivableMixin, ModelSQL, ModelView):
     'Brand'
     __name__ = 'product.brand'
     name = fields.Char('Name', required=True, translate=True)
-    active = fields.Boolean('Active')
     description = fields.Text('Description', translate=True)
     products = fields.One2Many('product.template', 'brand', 'Products')
-
-    @staticmethod
-    def default_active():
-        return True
 
     @classmethod
     def copy(cls, brands, default=None):
