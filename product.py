@@ -31,3 +31,7 @@ class Model(ModelSQL, ModelView):
 class Template(metaclass=PoolMeta):
     __name__ = 'product.template'
     brand = fields.Many2One('product.brand', 'Brand')
+
+
+class Product(metaclass=PoolMeta):
+    __name__ = 'product.product'

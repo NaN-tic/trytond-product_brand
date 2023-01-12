@@ -9,4 +9,5 @@ def register():
         product.Brand,
         product.Model,
         product.Template,
+        product.Product,
         module='product_brand', type_='model')
