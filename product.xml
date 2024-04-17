@@ -39,14 +39,14 @@
         </record>
 
         <record model="ir.model.access" id="access_product_brand">
-            <field name="model" search="[('model', '=', 'product.brand')]"/>
+            <field name="model">product.brand</field>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="False"/>
             <field name="perm_create" eval="False"/>
             <field name="perm_delete" eval="False"/>
         </record>
         <record model="ir.model.access" id="access_product_brand_admin">
-            <field name="model" search="[('model', '=', 'product.brand')]"/>
+            <field name="model">product.brand</field>
             <field name="group" ref="product.group_product_admin"/>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
@@ -86,14 +86,14 @@
         </record>
 
         <record model="ir.model.access" id="access_product_brand_model">
-            <field name="model" search="[('model', '=', 'product.brand.model')]"/>
+            <field name="model">product.brand.model</field>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="False"/>
             <field name="perm_create" eval="False"/>
             <field name="perm_delete" eval="False"/>
         </record>
         <record model="ir.model.access" id="access_product_brand_model_admin">
-            <field name="model" search="[('model', '=', 'product.brand.model')]"/>
+            <field name="model">product.brand.model</field>
             <field name="group" ref="product.group_product_admin"/>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
