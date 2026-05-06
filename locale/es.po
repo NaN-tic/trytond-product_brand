@@ -78,6 +78,10 @@ msgctxt "field:product.template,brand:"
 msgid "Brand"
 msgstr "Marca"
 
+msgctxt "field:product.product,brand:"
+msgid "Brand"
+msgstr "Marca"
+
 msgctxt "model:ir.action,name:act_product_brand"
 msgid "Brands"
 msgstr "Marcas"
